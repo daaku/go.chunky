@@ -20,7 +20,7 @@ var (
 // chunks as best possible while preventing splitting of chunks. This Writer is
 // NOT safe for concurrent use.
 type Writer struct {
-	io.Writer
+	Writer         io.Writer
 	MaxWriteLength int
 	mark           int
 	two            bool
